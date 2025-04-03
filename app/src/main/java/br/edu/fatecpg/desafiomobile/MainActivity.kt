@@ -1,4 +1,5 @@
 package br.edu.fatecpg.desafiomobile
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -36,7 +37,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
 
         txt_lista.setOnClickListener {
-            
+            val intent = Intent(this, activity_lista_produtos::class.java)
+            startActivity(intent)
         }
     }
 }

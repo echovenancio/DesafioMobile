@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import br.edu.fatecpg.desafiomobile.R
 import br.edu.fatecpg.desafiomobile.model.Produto
 import java.util.concurrent.Executors
 
@@ -24,7 +25,7 @@ class ProdutoAdapter(private val lista_produto: List<Produto>):
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_produto, parent, false)
+            .inflate(R.layout.card_produto, parent, false)
         return ViewHolder(view)
     }
 
