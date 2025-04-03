@@ -5,17 +5,119 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B71A8003"
+    android:textAlignment="gravity"
+    android:textDirection="firstStrong"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/img_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_nome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        app:srcCompat="@android:drawable/ic_delete" />
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/shape_top" />
+
+    <Button
+        android:id="@+id/btn_cadastrar"
+        android:layout_width="315dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/black"
+        android:text="Cadastrar"
+        android:textSize="24sp"
+        app:barrierMargin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_link"
+        app:layout_marginBaseline="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="416dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_lista"
+        app:srcCompat="@drawable/shape_bottom" />
+
+    <TextView
+        android:id="@+id/txt_lista"
+        android:layout_width="99dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:text="Ver Lista"
+        android:textColor="#F6F6F6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cadastrar" />
+
+    <EditText
+        android:id="@+id/txt_nome"
+        android:layout_width="354dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Nome:"
+        android:inputType="text"
+        android:minHeight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/txt_valor"
+        android:layout_width="356dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Valor:"
+        android:inputType="text"
+        android:minHeight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nome" />
+
+    <EditText
+        android:id="@+id/txt_link"
+        android:layout_width="357dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Link da Imagem:"
+        android:inputType="text"
+        android:minHeight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_valor" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="306dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.296"
+        app:srcCompat="@drawable/android" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
